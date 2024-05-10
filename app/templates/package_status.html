@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+</head>
+<body>
+<div>
+    <ul>
+        {% for package in packages %}
+        <p> PackageId: {{package.id}}</p>
+        <li> sender: {{package.sender}}</li>
+        <li> recipient: {{package.recipient}}</li>
+        <li> origin : {{package.origin}}</li>
+        <li> destination: {{package.destination}}</li>
+        <li> location: {{package.location}}</li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>
